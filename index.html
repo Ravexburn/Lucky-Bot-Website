@@ -27,8 +27,100 @@
             <span class="command">*rep </span><span class="explanation">[@mention] <i>or</i> [user ID] </span><span>Gives the user a reputation point. Can be used once every 12 hours.</span>
         </div>
         <div class="section">
-            <p class="sectionheader">Music Commands</p><br>
-            <span>soontm</span>
+            <p class="sectionheader">Last FM</p><br>
+            <span class="command">*lastfm </span><span>Shows basic account info.</span><br><br>
+            <span class="command">*lastfm </span><span class="explanation">set </span><span>Saves lastfm username for future use.</span><br><br>
+            <span class="command">*lastfm </span><span class="explanation">nowplaying </span><span>Shows the song currently playing.</span><br><br>
+            <span class="command">*lastfm </span><span class="explanation">toptracks [week|month|3-month|half-year|year] </span><span>Shows the top tracks of [period].</span><br><br>
+            <span class="command">*lastfm </span><span class="explanation">topartist [week|month|3-month|half-year|year] </span><span>Shows the top artists of [period].</span><br><br>
+            <span class="command">*lastfm </span><span class="explanation">topalbums [week|month|3-month|half-year|year] </span><span>Shows the top albums of [period].</span>
+        </div>
+        <div class="section">
+            <p class="sectionheader">Notifications</p><br>
+            <span class="command">*notify </span><span class="explanation">add [keyword] </span><span>Adds a [keyword] to notify you about on the server.</span><br><br>
+            <span class="command">*notify </span><span class="explanation">remove [keyword] </span><span>Removes a [keyword] you were notified about on the server.</span><br><br>
+            <span class="command">*notify </span><span class="explanation">list </span><span>Direct messages a list of keywords for the server.</span><br><br>
+            <span class="command">*notify </span><span class="explanation">clear </span><span>Removes all keywords for the server.</span><br><br>
+            <span class="command">*notify </span><span class="explanation">global add [keyword] </span><span>Adds a [keyword] to notify you about on all servers.</span><br><br>
+            <span class="command">*notify </span><span class="explanation">global remove [keyword] </span><span>Removes a global [keyword].</span><br><br>
+            <span class="command">*notify </span><span class="explanation">global list </span><span>Direct messages a list of global keywords.</span><br><br>
+            <span class="command">*notify </span><span class="explanation">global clear </span><span>Removes all global keywords you have.</span><br><br>
+            <span class="command">*notify </span><span class="explanation">ignore channel [#channel-name or channel ID] </span><span>Ignores all keyword triggers in the specified channel.</span><br><br>
+            <span class="command">*notify </span><span class="explanation">ignore server </span><span>Ignores all global keyword triggers in the server.</span>
+        </div>
+        <div class="section">
+            <p class="sectionheader">Custom Commands</p><br>
+            <span class="command">*command </span><span class="explanation">list </span><span>Direct messages a list of custom commands on the server.</span><br><br>
+            <span class="command">*command </span><span class="explanation">add [name] [command] </span><span>Adds a custom command to the server.</span><br><br>
+            <span class="command">*command </span><span class="explanation">remove [name] [command] </span><span>Removes a custom command on the server.</span><br><br>
+            <span class="command">*command </span><span class="explanation">edit [name] [command] </span><span>Edits a custom command on the server.</span>
+        </div>
+        <div class="section">
+            <p class="sectionheader">Music</p><br>
+            <span class="command">*nowplaying </span><span>shows the song that is currently playing</span><br><br>
+            <span class="command">*play </span><span class="explanation">[title|URL|subcommand] </span><span>plays the provided song</span><br><br>
+            <span class="command">*playlists </span><span>shows the available playlists</span><br><br>
+            <span class="command">*queue </span><span class="explanation">[page number] </span><span>shows the current queue or specified page number of queue</span><br><br>
+            <span class="command">*remove </span><span class="explanation">[position|all] </span><span>removes a song from the queue</span><br><br>
+            <span class="command">*search </span><span class="explanation">[query] </span><span>earches Youtube for a provided query</span><br><br>
+            <span class="command">*scsearch </span><span class="explanation">[query] </span><span>searches Soundcloud for a provided query</span><br><br>
+            <span class="command">*shuffle </span><span>shuffles the queue</span><br><br>
+            <span class="command">*skip </span><span>initiates a vote to skip the current song</span><br><br>
+            <span class="command">*forceskip </span><span>skips the current song  (DJ role required)</span><br><br>
+            <span class="command">*pause </span><span>pauses. duh. (DJ role required)</span><br><br>
+            <span class="command">*repeat </span><span class="explanation">[on|off] </span><span>toggles re-adding music to the queue when it is empty</span><br><br>
+            <span class="command">*skipto </span><span class="explanation">[position] </span><span>skips to the specified song  (DJ role required)</span><br><br>
+            <span class="command">*stop </span><span>stops and clears the queue (DJ role required)</span><br><br>
+            <span class="command">*volume </span><span class="explanation">[0 - 150] </span><span>sets volume or displays current volume if no extra argument is given (DJ role required)</span><br><br>
+            <span class="command">*setdj </span><span class="explanation">[rolename|none] </span><span>sets the DJ role for certain music commands (Admin role required)</span><br><br>
+            <span class="command">*settc </span><span class="explanation">[channel-name|none] </span><span>sets the text channel for music commands (Admin role required)</span><br><br>
+            <span class="command">*setvc </span><span class="explanation">[channel-name|none] </span><span>sets the voice channel for playing music (Admin role required)</span>
+        </div>
+        <div class="section">
+            <p class="sectionheader">Greeter</p><br>
+            <span class="command">*greeter </span><span class="explanation">channel [#channel-name or ID] </span><span>Sets the channel the bot should greeter new members in.</span><br><br>
+            <span class="command">*greeter </span><span class="explanation">[message] </span><span>Sets the message the bot says when a new member joins. Adding {server} will display the server name, {user} will display the user's name and tag, and {mention} will mention the user.</span>
+        </div>
+        <div class="section">
+            <p class="sectionheader">Logging and Roles</p><br>
+            <span class="command">*start </span><span class="explanation">roles [#channel-name or ID] </span><span>Sets the channel for the role system.</span><br><br>
+            <span class="command">*start </span><span class="explanation">logs [#channel-name or ID] </span><span>Sets the channel for message logs.</span><br><br>
+            <span class="command">*start </span><span class="explanation">join [#channel-name or ID] </span><span>Sets the channel for users joining and leaving (message cannot be changed through this command).</span>
+        </div>
+        <div class="section">
+            <p class="sectionheader">Toggles</p><br>
+            <span class="command">*toggle </span><span class="explanation">imnage </span><span>Changes between embed and non-embed for images in message logs.</span><br><br>
+            <span class="command">*toggle </span><span class="explanation">logs </span><span>Turns message logs on and off.</span><br><br>
+            <span class="command">*toggle </span><span class="explanation">greeter </span><span>Turns greeter message on and off.</span><br><br>
+            <span class="command">*toggle </span><span class="explanation">roles </span><span>Turns roles channel on and off.</span>
+        </div>
+        <div class="section">
+            <p class="sectionheader">Misc</p><br>
+            <span class="command">*color </span><span class="explanation">[hex code|random] </span><span>Returns an image of the color provided or a random color.</span>
+        </div>
+        <div class="section">
+            <p class="sectionheader">Mod Commands</p><br>
+            <span class="command">*setprefix </span><span class="explanation">[prefix] </span><span>Changes the prefix for Lucky Bot.</span><br><br>
+            <span class="command">*autorole </span><span class="explanation">[rolename] </span><span>Sets a role to be added to a user when they join the server.</span><br><br>
+            <span class="command">*ban </span><span class="explanation">[@user or ID] [days] [reason] </span><span>Bans a user and removes the messages from [days] for [reason]. Days default is 0.</span><br><br>
+            <span class="command">*kick </span><span class="explanation">[@user or ID] [reason] </span><span>Kicks a user for [reason].</span><br><br>
+            <span class="command">*prune </span><span class="explanation">[number of messages] </span><span>Deletes [number of messages] as well as the command line.</span>
+        </div>
+<!--
+        <div class="section">
+            <p class="sectionheader">Header</p><br>
+            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
+            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
+            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
+            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
+            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
+            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
+            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
+        </div>
+-->
+        <div class="section">
+            <p class="sectionheader">Relays</p><br>
+            <span>Relays connect a two way chat system between two channels on a server or between two servers. Please contact Rave#0737 or OrigamiCoder#1375 to have one set up.</span>
         </div>
         <p class="credits">Please excuse the appearance while the website is being worked on. Website designed by Wooricallie#2903</p>
 	</body>
