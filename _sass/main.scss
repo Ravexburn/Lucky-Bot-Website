@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$light: #EFF0EB;
+$dark: #1a1f2d;
+
+$background: $dark;
+
+// Update Bulma's global variables
+$family-sans-serif: "Lato", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: #303952;
+$link: #64c5eb;
+$info: #f78fb3;
+$warning: #f7d794;
+$link-hover: $light;
+$body-background-color: $dark;
+$body-color: $light;
+$title-color: $light;
+$content-heading-color: $light;
+$strong-color: $beige-light;
+$table-color: $light;
+$table-cell-heading-color: $light;
+$table-head-cell-color: $light;
+$table-foot-cell-color: $light;
+$table-background-color: $primary;
+$pre: $light;
+$code: $info;
+$pre-background: $primary;
+
+$footer-background-color: $primary;
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+$input-background-color: $light;
+$input-border-color: transparent;
+$input-shadow: none;
+
+$dimensions: 192;
+
+@import "../node_modules/bulma/bulma";
+
+$gradient-light: #667eea;
+$gradient-dark: #764ba2;
+
+$gradient: linear-gradient(135deg, $gradient-light 0%, $gradient-dark 100%);
+
+.lucky-icon {
+    background: linear-gradient(45deg, #9795f0 0%, #fbc8d4 100%);
+    padding: 5px;
+}
+
+.stripes {
+  display: grid;
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  top: 0;
+  background-image: $gradient;
+  z-index: -1;
+  grid: repeat(5, 200px) / repeat(10, 1fr);
+  transform: skewY(-8deg);
+  transform-origin: 0;
+}
+
+.stripes :nth-child(1) {
+  grid-column: span 3;
+  background-image: linear-gradient(90deg, $gradient-dark 0%, #6a71d8 100%);
+}
+
+.stripes :nth-child(2) {
+  grid-area: 3 / span 3 / auto / -1;
+  background-image: linear-gradient(90deg, #705dbc 0%, $gradient-light 100%);
+}
+
+.stripes :nth-child(3) {
+  grid-row: 4;
+  grid-column: span 5;
+  background-image: linear-gradient(90deg, $gradient-dark 0%, #715bb8 100%);
+}
+
+
+.button {
+    box-shadow: 0px 4px 10px #764ba2;
+    transition: all 0.1s;
+    top: 0;
+    position: relative;
+
+    &:hover {
+        box-shadow: 0px 6px 20px darken(#764ba2, 5%);
+        top: -1px;
+    }
+}
+
+.button-landing {
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+.indented {
+    padding-left: 40px;
+    text-indent: -20px;
+}
+
+.chevron-arrow-wrap {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+    .chevron-arrow {
+        padding: 10px 10px 10px 10px;
+        border-right: 4px solid $light;
+        border-bottom: 4px solid $light;
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+    }
+}
+
+.divider {
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #6f62c2 100%);
+}

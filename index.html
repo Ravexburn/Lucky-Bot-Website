@@ -1,140 +1,80 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="luckybot.css">
-		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
-		<title>Luckybot</title>
-	</head>
-	<body>
-		<div>
-			<ul>
-				<li class="navbar"><a href="pchina.html">Produce 101 China</a></li>
-			</ul>
-		</div>
-		<div>
-            <img class="avatar" src="luckybot.jpg"><p class="header"><b>Lucky Bot Command Help Center</b></p>
-            <p class="info">This website is for command help with Lucky Bot for Discord. For more information, please contact Rave#0737.</p>
-		</div>
-        <div class="section">
-            <p class="sectionheader">Info Commands</p><br>
-            <span class="command">*userinfo </span><span class="explanation">[@mention] <i>or</i> [user ID] </span><span>Shows information about a user.</span><br><br>
-            <span class="command">*serverinfo </span><span>Shows information about the server.</span><br><br>
-            <span class="command">*botinfo </span><span>Shows information about the server.</span><br><br>
-            <span class="command">*invite </span><span>Sends a direct message to the requester with information on how to add Lucky Bot to a server.</span><br><br>
-            <span class="command">*trello </span><span>Sends a link to Lucky Bot's trello page.</span><br><br>
-            <span class="command">*github </span><span>Sends a link to Lucky Bot's github page.</span><br><br>
-            <span class="command">*issue </span><span class="explanation">[message] </span><span>Allows the user to report an issue they are experiencing with Lucky Bot.</span><br><br>
-            <span class="command">*suggestion </span><span class="explanation">[message] </span><span>Allows the user to suggest a feature they would like to see on Lucky Bot.</span>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luckybot</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <figure class="image is-192x192" style="margin: auto auto 30px auto">
+            <img class="is-rounded lucky-icon" src="./luckybot.jpg">
+          </figure>
+          <h1 class="title is-1 is-spaced">
+            Luckybot
+          </h1>
+          <a class="button button-landing is-rounded is-medium is-link" href="#commands">
+            <strong class="has-text-weight-semibold"></strong>Commands</strong>
+          </a>
+          <a class="button button-landing is-rounded is-medium is-info" href="https://discord.gg/z4thPtW" target="_blank">
+            Discord Server
+          </a>
+          <a class="button button-landing is-rounded is-medium is-primary is-outlined is-inverted" href="p48.html">
+            Produce 48
+          </a>
         </div>
-        <div class="section">
-            <p class="sectionheader">Profile Commands</p><br>
-            <span class="command">*profile </span><span class="explanation">[@mention] <i>or</i> [user ID] </span><span>Shows the profile of the user.</span><br><br>
-            <span class="command">*ticket </span><span>Adds a ticket to your account. Can be used once every 6 hours.</span><br><br>
-            <span class="command">*rep </span><span class="explanation">[@mention] <i>or</i> [user ID] </span><span>Gives the user a reputation point. Can be used once every 12 hours.</span>
+      </div>
+      <div class="hero-footer">
+        <div class="chevron-arrow-wrap">
+          <a href="#commands" class="chevron-arrow"></a>
         </div>
-        <div class="section">
-            <p class="sectionheader">Last FM</p><br>
-            <span class="command">*lastfm </span><span>Shows basic account info.</span><br><br>
-            <span class="command">*lastfm </span><span class="explanation">set </span><span>Saves lastfm username for future use.</span><br><br>
-			<span class="command">*lastfm </span><span class="explanation">nowplaying </span><span>Shows the song currently playing.</span><br><br>
-			<span class="command">*lastfm </span><span class="explanation">recent </span><span>Shows the most recent songs played.</span><br><br>
-            <span class="command">*lastfm </span><span class="explanation">toptracks [week|month|3-month|half-year|year] </span><span>Shows the top tracks of [period].</span><br><br>
-            <span class="command">*lastfm </span><span class="explanation">topartist [week|month|3-month|half-year|year] </span><span>Shows the top artists of [period].</span><br><br>
-            <span class="command">*lastfm </span><span class="explanation">topalbums [week|month|3-month|half-year|year] </span><span>Shows the top albums of [period].</span>
+      </div>
+    </section>
+    <div class="stripes">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+              <h2 id="commands">Commands</h2>
+              <p>This website is for command help with Lucky Bot for Discord. For more information, please contact Rave#0737.</p>
+              <div id="cmds"></div>
+              <h2>Relays</h2>
+              <p>Relays connect a two way chat system between two channels on a server or between two servers. Please contact Rave#0737
+              or OrigamiCoder#1375 to have one set up.</p>
+            </div>
+          </div>
         </div>
-        <div class="section">
-            <p class="sectionheader">Notifications</p><br>
-            <span class="command">*notify </span><span class="explanation">add [keyword] </span><span>Adds a [keyword] to notify you about on the server.</span><br><br>
-            <span class="command">*notify </span><span class="explanation">remove [keyword] </span><span>Removes a [keyword] you were notified about on the server.</span><br><br>
-            <span class="command">*notify </span><span class="explanation">list </span><span>Direct messages a list of keywords for the server.</span><br><br>
-            <span class="command">*notify </span><span class="explanation">clear </span><span>Removes all keywords for the server.</span><br><br>
-            <span class="command">*notify </span><span class="explanation">global add [keyword] </span><span>Adds a [keyword] to notify you about on all servers.</span><br><br>
-            <span class="command">*notify </span><span class="explanation">global remove [keyword] </span><span>Removes a global [keyword].</span><br><br>
-            <span class="command">*notify </span><span class="explanation">global list </span><span>Direct messages a list of global keywords.</span><br><br>
-            <span class="command">*notify </span><span class="explanation">global clear </span><span>Removes all global keywords you have.</span><br><br>
-            <span class="command">*notify </span><span class="explanation">ignore channel [#channel-name or channel ID] </span><span>Ignores all keyword triggers in the specified channel.</span><br><br>
-            <span class="command">*notify </span><span class="explanation">ignore server </span><span>Ignores all global keyword triggers in the server.</span>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+         <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <p>
+              <strong class="has-text-weight-semibold">
+                <a href="https://github.com/Ravexburn/LuckyBot/" target="_blank">Ravexburn/LuckyBot</a>
+              </strong>
+            </p>
+            <p>
+              <small>
+                Source code licensed <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>
+                <br>
+                Website created by tzuwy#7080
+              </small>
+            </p>
+          </div>
         </div>
-        <div class="section">
-            <p class="sectionheader">Custom Commands</p><br>
-            <span class="command">*command </span><span class="explanation">list </span><span>Direct messages a list of custom commands on the server.</span><br><br>
-            <span class="command">*command </span><span class="explanation">add [name] [command] </span><span>Adds a custom command to the server.</span><br><br>
-            <span class="command">*command </span><span class="explanation">remove [name] [command] </span><span>Removes a custom command on the server.</span><br><br>
-            <span class="command">*command </span><span class="explanation">edit [name] [command] </span><span>Edits a custom command on the server.</span>
-		</div>
-		<div class="section">
-            <p class="sectionheader">Starboard</p><br>
-            <span class="command">*starboard </span><span class="explanation">channel [#channel-name or ID] </span><span>Sets the channel where the bot should place starred messages.</span><br><br>
-            <span class="command">*starboard </span><span class="explanation">emoji </span><span>Prompts the user to react with the emoji the bot watches for to place messages on the board.</span><br><br>
-            <span class="command">*starboard </span><span class="explanation">number [number] </span><span>Sets the number of reactions required to place messages on the board.</span><br><br>
-		</div>
-		<div class="section">
-            <p class="sectionheader">Music</p><br>
-            <span class="command">**nowplaying </span><span>shows the song that is currently playing</span><br><br>
-            <span class="command">**play </span><span class="explanation">[title|URL|subcommand] </span><span>plays the provided song</span><br><br>
-            <span class="command">**playlists </span><span>shows the available playlists</span><br><br>
-            <span class="command">**queue </span><span class="explanation">[page number] </span><span>shows the current queue or specified page number of queue</span><br><br>
-            <span class="command">**remove </span><span class="explanation">[position|all] </span><span>removes a song from the queue</span><br><br>
-            <span class="command">**search </span><span class="explanation">[query] </span><span>earches Youtube for a provided query</span><br><br>
-            <span class="command">**scsearch </span><span class="explanation">[query] </span><span>searches Soundcloud for a provided query</span><br><br>
-            <span class="command">**shuffle </span><span>shuffles the queue</span><br><br>
-            <span class="command">**skip </span><span>initiates a vote to skip the current song</span><br><br>
-            <span class="command">**forceskip </span><span>skips the current song  (DJ role required)</span><br><br>
-            <span class="command">**pause </span><span>pauses. duh. (DJ role required)</span><br><br>
-            <span class="command">**repeat </span><span class="explanation">[on|off] </span><span>toggles re-adding music to the queue when it is empty</span><br><br>
-            <span class="command">**skipto </span><span class="explanation">[position] </span><span>skips to the specified song  (DJ role required)</span><br><br>
-            <span class="command">**stop </span><span>stops and clears the queue (DJ role required)</span><br><br>
-            <span class="command">**volume </span><span class="explanation">[0 - 150] </span><span>sets volume or displays current volume if no extra argument is given (DJ role required)</span><br><br>
-            <span class="command">**setdj </span><span class="explanation">[rolename|none] </span><span>sets the DJ role for certain music commands (Admin role required)</span><br><br>
-            <span class="command">**settc </span><span class="explanation">[channel-name|none] </span><span>sets the text channel for music commands (Admin role required)</span><br><br>
-            <span class="command">**setvc </span><span class="explanation">[channel-name|none] </span><span>sets the voice channel for playing music (Admin role required)</span>
-        </div>
-        <div class="section">
-            <p class="sectionheader">Greeter</p><br>
-            <span class="command">*greeter </span><span class="explanation">channel [#channel-name or ID] </span><span>Sets the channel the bot should greeter new members in.</span><br><br>
-            <span class="command">*greeter </span><span class="explanation">[message] </span><span>Sets the message the bot says when a new member joins. Adding {server} will display the server name, {user} will display the user's name and tag, and {mention} will mention the user.</span>
-        </div>
-        <div class="section">
-            <p class="sectionheader">Logging and Roles</p><br>
-            <span class="command">*start </span><span class="explanation">roles [#channel-name or ID] </span><span>Sets the channel for the role system.</span><br><br>
-            <span class="command">*start </span><span class="explanation">logs [#channel-name or ID] </span><span>Sets the channel for message logs.</span><br><br>
-            <span class="command">*start </span><span class="explanation">join [#channel-name or ID] </span><span>Sets the channel for users joining and leaving (message cannot be changed through this command).</span>
-        </div>
-        <div class="section">
-            <p class="sectionheader">Toggles</p><br>
-            <span class="command">*toggle </span><span class="explanation">image </span><span>Changes between embed and non-embed for images in message logs.</span><br><br>
-            <span class="command">*toggle </span><span class="explanation">logs </span><span>Turns message logs on and off.</span><br><br>
-            <span class="command">*toggle </span><span class="explanation">greeter </span><span>Turns greeter message on and off.</span><br><br>
-			<span class="command">*toggle </span><span class="explanation">roles </span><span>Turns roles channel on and off.</span><br><br>
-			<span class="command">*toggle </span><span class="explanation">roles </span><span>Turns starboard channel on and off.</span>
-        </div>
-        <div class="section">
-            <p class="sectionheader">Misc</p><br>
-            <span class="command">*color </span><span class="explanation">[hex code|random] </span><span>Returns an image of the color provided or a random color.</span>
-        </div>
-        <div class="section">
-            <p class="sectionheader">Mod Commands</p><br>
-            <span class="command">*setprefix </span><span class="explanation">[prefix] </span><span>Changes the prefix for Lucky Bot.</span><br><br>
-            <span class="command">*autorole </span><span class="explanation">[rolename] </span><span>Sets a role to be added to a user when they join the server.</span><br><br>
-            <span class="command">*ban </span><span class="explanation">[@user or ID] [days] [reason] </span><span>Bans a user and removes the messages from [days] for [reason]. Days default is 0.</span><br><br>
-            <span class="command">*kick </span><span class="explanation">[@user or ID] [reason] </span><span>Kicks a user for [reason].</span><br><br>
-            <span class="command">*prune </span><span class="explanation">[number of messages] </span><span>Deletes [number of messages] as well as the command line.</span>
-        </div>
-<!--
-        <div class="section">
-            <p class="sectionheader">Header</p><br>
-            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
-            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
-            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
-            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
-            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
-            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
-            <span class="command">*command </span><span class="explanation">extra </span><span>Comment</span><br><br>
-        </div>
--->
-        <div class="section">
-            <p class="sectionheader">Relays</p><br>
-            <span>Relays connect a two way chat system between two channels on a server or between two servers. Please contact Rave#0737 or OrigamiCoder#1375 to have one set up.</span>
-        </div>
-        <p class="credits">Please excuse the appearance while the website is being worked on. Website designed by Wooricallie#2903</p>
-	</body>
+      </div>
+    </footer>
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
 </html>
